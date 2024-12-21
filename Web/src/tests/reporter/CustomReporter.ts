@@ -35,7 +35,7 @@ export class CustomReporter implements Reporter {
 
       // GitHub API에 POST 요청하여 HTML 리포트 업로드
       await axios.put(
-        'https://api.github.com/repos/hongjihyun/playwright/contents/reports/index.html',
+        'https://api.github.com/repos/hongjihyun/playwright/playwright-report',
         {
           message: 'Upload Playwright HTML report',
           content: encodedContent,
