@@ -5,17 +5,17 @@ export class LoginPage {
 
   // 로그인 페이지로 이동
   async goto() {
-    await this.page.goto('https://qa.hyperlab.hits.ai/auth/signin');
+    await this.page.goto('https://qa.hyperlab.hits.ai/en/auth/signin');
   }
 
   // 이메일 입력 필드에 값 입력
   async fillEmail(email: string) {
-    await this.page.fill('input[placeholder="Email"]', email);
+    await this.page.fill('input[placeholder="이메일"]', email);
   }
 
   // 비밀번호 입력 필드에 값 입력
   async fillPassword(password: string) {
-    await this.page.fill('input[placeholder="Password"]', password);
+    await this.page.fill('input[placeholder="비밀번호"]', password);
   }
 
   // 로그인 버튼 클릭
